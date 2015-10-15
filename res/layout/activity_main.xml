@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <View 
+       	android:layout_width="match_parent"
+       	android:layout_height="2dp"
+       	android:background="#E9E9E9"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFBFB"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <RadioButton
+            android:id="@+id/rd_homeId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FBFBFB"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_home_house"
+            android:gravity="center_horizontal"
+            android:onClick="checkHome"
+            android:text="首页"
+            android:textColor="@drawable/btn_home_text_color"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rd_findId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FBFBFB"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_home_find"
+            android:gravity="center_horizontal"
+            android:onClick="checkFind"
+            android:text="发现"
+            android:textColor="@drawable/btn_home_text_color"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rd_newsId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FBFBFB"
+            android:onClick="checkNews"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_home_news"
+            android:gravity="center_horizontal"
+            android:text="消息"
+            android:textColor="@drawable/btn_home_text_color"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rd_mineId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FBFBFB"
+            android:onClick="checkMine"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_home_my"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@drawable/btn_home_text_color"
+            android:textSize="10dp" />
+    </RadioGroup>
+
+</LinearLayout>

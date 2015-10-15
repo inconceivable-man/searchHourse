@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup_xinfangId"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton_quyuId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/title_bar_arrow"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:text="区域"
+            android:textColor="@drawable/btn_xinfang_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="#C9C9C9" />
+
+        <RadioButton
+            android:id="@+id/radioButton_leibieId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/title_bar_arrow"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:text="类别"
+            android:textColor="@drawable/btn_xinfang_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="#C9C9C9" />
+
+        <RadioButton
+            android:id="@+id/radioButton_jiageId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/title_bar_arrow"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:text="价格"
+            android:textColor="@drawable/btn_xinfang_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="#C9C9C9" />
+
+        <RadioButton
+            android:id="@+id/radioButton_moreId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/title_bar_arrow"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:text="更多"
+            android:textColor="@drawable/btn_xinfang_text_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/xinfang_sumId"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#F0F2F4"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:textColor="#818182"
+        android:textSize="12sp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/xinfangListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

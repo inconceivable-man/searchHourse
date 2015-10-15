@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_select">#0CB2D7</color>
+    <color name="main_no_select">#9B9F9E</color>
+    
+    <color name="xinfang_tab_select">#18ACC8</color>
+    <color name="xinfang_tab_no_select">#000000</color>
+    
+</resources>

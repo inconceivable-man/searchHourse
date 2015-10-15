@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/xinfang_imageViewId"
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/xinfang_title_textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/xinfang_imageViewId"
+        android:paddingLeft="8dp"
+        android:text="@string/hello_world"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#1D1D1D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/xinfang_place_textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xinfang_title_textViewId"
+        android:layout_toRightOf="@id/xinfang_imageViewId"
+        android:paddingLeft="8dp"
+        android:text="@string/hello_world"
+        android:textColor="#B3B3B3"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/xinfang_price_textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xinfang_title_textViewId"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:text="@string/hello_world"
+        android:textColor="#FF6C5D"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/xinfang_address_textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xinfang_price_textViewId"
+        android:layout_toRightOf="@id/xinfang_imageViewId"
+        android:paddingLeft="8dp"
+        android:text="@string/hello_world"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#8F8F8F"
+        android:textSize="13sp" />
+    
+    <LinearLayout
+        android:id="@+id/xinfang_bookmark_linearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/xinfang_imageViewId"
+        android:layout_below="@id/xinfang_address_textViewId"
+        android:layout_toRightOf="@id/xinfang_imageViewId"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#18ACC8" >
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:onClick="backHome"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/info_title_textId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="房产资讯"
+            android:textColor="#CAF3FF"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_share" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/info_contentViewPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#E8EBF0"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="4"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/btn_post_comment"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="发表评论"
+            android:textColor="#ADADAD"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/info_btn_commentsId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_comments_background"
+            android:drawableLeft="@drawable/btn_comment"
+            android:paddingLeft="8dp"
+            android:text="0"
+            android:onClick="showComments"
+            android:textColor="#ADADAD"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
